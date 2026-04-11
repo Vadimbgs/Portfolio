@@ -9,3 +9,5 @@ https://github.com/Vadimbgs/holiday_resort - Holiday
 https://github.com/Vadimbgs/weeb - Weeb
 
 https://github.com/Vadimbgs/GoCorona - GoCorona
+
+https://github.com/Vadimbgs/Starbucks - Starbucks
