@@ -1,0 +1,113 @@
+/* Кнопка */
+.button {
+	padding: 16px 20px;
+	line-height: 1.2;
+	font-size: 18px;
+	border-radius: 100px;
+	color: var(--text-primary);
+	border: 1px solid var(--text-primary);
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	transition:
+		background-color 0.3s,
+		color 0.3s;
+}
+.button path {
+	transition: stroke 0.3s;
+	stroke: var(--text-primary);
+}
+.button:hover {
+	color: var(--text-inverse);
+	background-color: var(--text-primary);
+}
+.button:hover path {
+	stroke: var(--text-inverse);
+}
+/* Посилання зі стрілкою */
+.arrow-link {
+	font-size: 18px;
+	line-height: 1.2;
+	display: inline-flex;
+	align-items: center;
+	gap: 12px;
+	transition: color 0.3s;
+}
+.arrow-link--left {
+	flex-direction: row-reverse;
+}
+.arrow-link--left svg {
+	rotate: 180deg;
+}
+.arrow-link path {
+	transition: stroke 0.3s;
+	stroke: var(--text-default);
+}
+.arrow-link:hover {
+	color: var(--text-primary);
+}
+.arrow-link:hover path {
+	stroke: var(--text-primary);
+}
+.arrow-link--dark {
+	color: var(--text-primary);
+}
+.arrow-link--dark path {
+	stroke: var(--text-primary);
+}
+.arrow-link--dark:hover path {
+	stroke: var(--text-default);
+}
+.arrow-link--dark:hover {
+	color: var(--text-default);
+}
+
+/* Заголовок секції  */
+.block-header {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 10px 20px;
+}
+.block-header__title {
+	line-height: 1.1;
+	font-size: 100px;
+	text-transform: uppercase;
+}
+.block-header__title span {
+	text-transform: none;
+	color: var(--text-primary);
+}
+.block-header__link {
+}
+@media (max-width: 991.98px) {
+	.block-header__title {
+		font-size: 70px;
+	}
+}
+@media (max-width: 767.98px) {
+	.block-header__title {
+		font-size: 38px;
+	}
+}
+/* Соціальні мережі */
+.social {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 10px 30px;
+}
+.social__item {
+}
+.social__link {
+	line-height: 1.2;
+	font-size: 14px;
+	text-transform: uppercase;
+	transition: color 0.3s;
+}
+.social__link:hover {
+	color: var(--text-primary);
+}
